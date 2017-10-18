@@ -1,3 +1,27 @@
-PODFILE CHECKSUM: a4e114ebd739183bf21e9fcc5ca475225a7dfcd3
+PODS:
+  - Alamofire (4.5.1)
+  - ReachabilitySwift (4.1.0)
+  - SwiftyJSON (3.1.4)
+  - TRON (3.1.1):
+    - Alamofire (~> 4.1)
+    - TRON/SwiftyJSON (= 3.1.1)
+  - TRON/Core (3.1.1):
+    - Alamofire (~> 4.1)
+  - TRON/SwiftyJSON (3.1.1):
+    - Alamofire (~> 4.1)
+    - SwiftyJSON (~> 3.1)
+    - TRON/Core
+
+DEPENDENCIES:
+  - ReachabilitySwift
+  - TRON
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TRON: 4a0363c028cd01be7654d810d5157fce64b24855
+
+PODFILE CHECKSUM: 4fdca9a753a31eb60c6c4c337d476ebd20c53fe2
 
 COCOAPODS: 1.3.1

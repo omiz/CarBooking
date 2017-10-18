@@ -11,16 +11,13 @@
 		23982C5D9A2B2A6FF2ACA069 /* Pods_CarBookingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59FE8A075E9D07BD21EC729 /* Pods_CarBookingUITests.framework */; };
 		383694CB730BA687F6E36342 /* Pods_CarBookingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7340F2BAF2F6768D9BA013 /* Pods_CarBookingTests.framework */; };
 		E06CFA461F97C0CD00344812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA451F97C0CD00344812 /* AppDelegate.swift */; };
-		E06CFA481F97C0CD00344812 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA471F97C0CD00344812 /* FirstViewController.swift */; };
-		E06CFA4A1F97C0CD00344812 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA491F97C0CD00344812 /* SecondViewController.swift */; };
+		E06CFA481F97C0CD00344812 /* VehicleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA471F97C0CD00344812 /* VehicleListViewController.swift */; };
+		E06CFA4A1F97C0CD00344812 /* BookedVehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA491F97C0CD00344812 /* BookedVehiclesViewController.swift */; };
 		E06CFA4D1F97C0CD00344812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06CFA4B1F97C0CD00344812 /* Main.storyboard */; };
 		E06CFA4F1F97C0CD00344812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06CFA4E1F97C0CD00344812 /* Assets.xcassets */; };
 		E06CFA521F97C0CD00344812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06CFA501F97C0CD00344812 /* LaunchScreen.storyboard */; };
 		E06CFA5D1F97C0CD00344812 /* CarBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA5C1F97C0CD00344812 /* CarBookingTests.swift */; };
 		E06CFA681F97C0CD00344812 /* CarBookingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA671F97C0CD00344812 /* CarBookingUITests.swift */; };
-		E0B23C131F97C60F00ECE992 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B23C121F97C60F00ECE992 /* Localizable.strings */; };
-		E0B23C141F97C60F00ECE992 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B23C121F97C60F00ECE992 /* Localizable.strings */; };
-		E0B23C151F97C60F00ECE992 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B23C121F97C60F00ECE992 /* Localizable.strings */; };
 		E0B23C181F97C63500ECE992 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */; };
 		E0B23C191F97C63500ECE992 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */; };
 		E0B23C1A1F97C63500ECE992 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */; };
@@ -30,6 +27,51 @@
 		E0B23C231F97C84900ECE992 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C221F97C84900ECE992 /* ThemeManager.swift */; };
 		E0B23C241F97C84900ECE992 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C221F97C84900ECE992 /* ThemeManager.swift */; };
 		E0B23C251F97C84900ECE992 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C221F97C84900ECE992 /* ThemeManager.swift */; };
+		E0B23C271F97CBDA00ECE992 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C261F97CBDA00ECE992 /* TabBarController.swift */; };
+		E0B23C281F97CBDA00ECE992 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C261F97CBDA00ECE992 /* TabBarController.swift */; };
+		E0B23C291F97CBDA00ECE992 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C261F97CBDA00ECE992 /* TabBarController.swift */; };
+		E0B23C2C1F97D1D400ECE992 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C2B1F97D1D400ECE992 /* DataManager.swift */; };
+		E0B23C2D1F97D1D400ECE992 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C2B1F97D1D400ECE992 /* DataManager.swift */; };
+		E0B23C2E1F97D1D400ECE992 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C2B1F97D1D400ECE992 /* DataManager.swift */; };
+		E0B23C311F97D2FE00ECE992 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C301F97D2FE00ECE992 /* Request.swift */; };
+		E0B23C321F97D2FE00ECE992 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C301F97D2FE00ECE992 /* Request.swift */; };
+		E0B23C331F97D2FE00ECE992 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C301F97D2FE00ECE992 /* Request.swift */; };
+		E0B23C351F97D44900ECE992 /* CarRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* CarRequests.swift */; };
+		E0B23C361F97D44900ECE992 /* CarRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* CarRequests.swift */; };
+		E0B23C371F97D44900ECE992 /* CarRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* CarRequests.swift */; };
+		E0B23C3A1F97D4B900ECE992 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C391F97D4B900ECE992 /* Vehicle.swift */; };
+		E0B23C3B1F97D4B900ECE992 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C391F97D4B900ECE992 /* Vehicle.swift */; };
+		E0B23C3C1F97D4B900ECE992 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C391F97D4B900ECE992 /* Vehicle.swift */; };
+		E0B23C3F1F97D5EC00ECE992 /* DataErrorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C3E1F97D5EC00ECE992 /* DataErrorObject.swift */; };
+		E0B23C401F97D5EC00ECE992 /* DataErrorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C3E1F97D5EC00ECE992 /* DataErrorObject.swift */; };
+		E0B23C411F97D5EC00ECE992 /* DataErrorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C3E1F97D5EC00ECE992 /* DataErrorObject.swift */; };
+		E0B23C441F97D66400ECE992 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C431F97D66400ECE992 /* UIViewController.swift */; };
+		E0B23C451F97D66400ECE992 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C431F97D66400ECE992 /* UIViewController.swift */; };
+		E0B23C461F97D66400ECE992 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C431F97D66400ECE992 /* UIViewController.swift */; };
+		E0C447D01F97DA5500FDF7A6 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447CF1F97DA5500FDF7A6 /* DataError.swift */; };
+		E0C447D11F97DA5500FDF7A6 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447CF1F97DA5500FDF7A6 /* DataError.swift */; };
+		E0C447D21F97DA5500FDF7A6 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447CF1F97DA5500FDF7A6 /* DataError.swift */; };
+		E0C447D41F97DAE700FDF7A6 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447D31F97DAE700FDF7A6 /* Booking.swift */; };
+		E0C447D51F97DAE700FDF7A6 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447D31F97DAE700FDF7A6 /* Booking.swift */; };
+		E0C447D61F97DAE700FDF7A6 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447D31F97DAE700FDF7A6 /* Booking.swift */; };
+		E0C447D81F97DAF800FDF7A6 /* BookingRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447D71F97DAF800FDF7A6 /* BookingRequests.swift */; };
+		E0C447D91F97DAF800FDF7A6 /* BookingRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447D71F97DAF800FDF7A6 /* BookingRequests.swift */; };
+		E0C447DA1F97DAF800FDF7A6 /* BookingRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447D71F97DAF800FDF7A6 /* BookingRequests.swift */; };
+		E0C447DC1F97E35E00FDF7A6 /* DecodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447DB1F97E35E00FDF7A6 /* DecodableArray.swift */; };
+		E0C447DD1F97E35E00FDF7A6 /* DecodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447DB1F97E35E00FDF7A6 /* DecodableArray.swift */; };
+		E0C447DE1F97E35E00FDF7A6 /* DecodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447DB1F97E35E00FDF7A6 /* DecodableArray.swift */; };
+		E0C447E21F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447E11F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift */; };
+		E0C447E31F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447E11F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift */; };
+		E0C447E41F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447E11F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift */; };
+		E0C447E61F97E60F00FDF7A6 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447E51F97E60F00FDF7A6 /* UICollectionView.swift */; };
+		E0C447E71F97E60F00FDF7A6 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447E51F97E60F00FDF7A6 /* UICollectionView.swift */; };
+		E0C447E81F97E60F00FDF7A6 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447E51F97E60F00FDF7A6 /* UICollectionView.swift */; };
+		E0C447EB1F97E6A000FDF7A6 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447EA1F97E6A000FDF7A6 /* Utility.swift */; };
+		E0C447EC1F97E6A000FDF7A6 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447EA1F97E6A000FDF7A6 /* Utility.swift */; };
+		E0C447ED1F97E6A000FDF7A6 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447EA1F97E6A000FDF7A6 /* Utility.swift */; };
+		E0C447EE1F97F43400FDF7A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0C447F21F97F43400FDF7A6 /* Localizable.strings */; };
+		E0C447EF1F97F43400FDF7A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0C447F21F97F43400FDF7A6 /* Localizable.strings */; };
+		E0C447F01F97F43400FDF7A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0C447F21F97F43400FDF7A6 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +102,8 @@
 		DAFCD14CA81B3183F7CFE012 /* Pods_CarBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06CFA421F97C0CD00344812 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06CFA451F97C0CD00344812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E06CFA471F97C0CD00344812 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E06CFA491F97C0CD00344812 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E06CFA471F97C0CD00344812 /* VehicleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewController.swift; sourceTree = "<group>"; };
+		E06CFA491F97C0CD00344812 /* BookedVehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookedVehiclesViewController.swift; sourceTree = "<group>"; };
 		E06CFA4C1F97C0CD00344812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E06CFA4E1F97C0CD00344812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E06CFA511F97C0CD00344812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,10 +114,24 @@
 		E06CFA631F97C0CD00344812 /* CarBookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06CFA671F97C0CD00344812 /* CarBookingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingUITests.swift; sourceTree = "<group>"; };
 		E06CFA691F97C0CD00344812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0B23C121F97C60F00ECE992 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 		E0B23C1C1F97C6AD00ECE992 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		E0B23C221F97C84900ECE992 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		E0B23C261F97CBDA00ECE992 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E0B23C2B1F97D1D400ECE992 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E0B23C301F97D2FE00ECE992 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E0B23C341F97D44900ECE992 /* CarRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRequests.swift; sourceTree = "<group>"; };
+		E0B23C391F97D4B900ECE992 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		E0B23C3E1F97D5EC00ECE992 /* DataErrorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataErrorObject.swift; sourceTree = "<group>"; };
+		E0B23C431F97D66400ECE992 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		E0C447CF1F97DA5500FDF7A6 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		E0C447D31F97DAE700FDF7A6 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		E0C447D71F97DAF800FDF7A6 /* BookingRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRequests.swift; sourceTree = "<group>"; };
+		E0C447DB1F97E35E00FDF7A6 /* DecodableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableArray.swift; sourceTree = "<group>"; };
+		E0C447E11F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0C447E51F97E60F00FDF7A6 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		E0C447EA1F97E6A000FDF7A6 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		E0C447F11F97F43400FDF7A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F309E78F87AD5BA4BDD69852 /* Pods-CarBookingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBookingUITests/Pods-CarBookingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +211,8 @@
 		E06CFA441F97C0CD00344812 /* CarBooking */ = {
 			isa = PBXGroup;
 			children = (
+				E0C447E91F97E66900FDF7A6 /* Utilities */,
+				E0B23C2A1F97D1C300ECE992 /* Data */,
 				E0B23C101F97C54500ECE992 /* Classes */,
 				E06CFA751F97C2EE00344812 /* Resources */,
 				E06CFA451F97C0CD00344812 /* AppDelegate.swift */,
@@ -197,24 +255,27 @@
 		E0B23C101F97C54500ECE992 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E0B23C111F97C55200ECE992 /* Controllers */,
+				E0B23C421F97D63B00ECE992 /* Extensions */,
+				E0B23C111F97C55200ECE992 /* UI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		E0B23C111F97C55200ECE992 /* Controllers */ = {
+		E0B23C111F97C55200ECE992 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E06CFA471F97C0CD00344812 /* FirstViewController.swift */,
-				E06CFA491F97C0CD00344812 /* SecondViewController.swift */,
+				E0C447DF1F97E5B300FDF7A6 /* Vehicle */,
+				E06CFA471F97C0CD00344812 /* VehicleListViewController.swift */,
+				E06CFA491F97C0CD00344812 /* BookedVehiclesViewController.swift */,
+				E0B23C261F97CBDA00ECE992 /* TabBarController.swift */,
 			);
-			path = Controllers;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		E0B23C161F97C61900ECE992 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				E0B23C121F97C60F00ECE992 /* Localizable.strings */,
+				E0C447F21F97F43400FDF7A6 /* Localizable.strings */,
 				E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */,
 			);
 			path = Strings;
@@ -242,6 +303,79 @@
 				E0B23C221F97C84900ECE992 /* ThemeManager.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		E0B23C2A1F97D1C300ECE992 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C3D1F97D5D100ECE992 /* Errors */,
+				E0B23C381F97D49800ECE992 /* Objects */,
+				E0B23C2F1F97D2EE00ECE992 /* Requests */,
+				E0B23C2B1F97D1D400ECE992 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E0B23C2F1F97D2EE00ECE992 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C301F97D2FE00ECE992 /* Request.swift */,
+				E0B23C341F97D44900ECE992 /* CarRequests.swift */,
+				E0C447D71F97DAF800FDF7A6 /* BookingRequests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E0B23C381F97D49800ECE992 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C391F97D4B900ECE992 /* Vehicle.swift */,
+				E0C447D31F97DAE700FDF7A6 /* Booking.swift */,
+				E0C447DB1F97E35E00FDF7A6 /* DecodableArray.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		E0B23C3D1F97D5D100ECE992 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C3E1F97D5EC00ECE992 /* DataErrorObject.swift */,
+				E0C447CF1F97DA5500FDF7A6 /* DataError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E0B23C421F97D63B00ECE992 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C431F97D66400ECE992 /* UIViewController.swift */,
+				E0C447E51F97E60F00FDF7A6 /* UICollectionView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0C447DF1F97E5B300FDF7A6 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				E0C447E01F97E5BD00FDF7A6 /* Cell */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		E0C447E01F97E5BD00FDF7A6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0C447E11F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E0C447E91F97E66900FDF7A6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E0C447EA1F97E6A000FDF7A6 /* Utility.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06CFA521F97C0CD00344812 /* LaunchScreen.storyboard in Resources */,
-				E0B23C131F97C60F00ECE992 /* Localizable.strings in Resources */,
+				E0C447EE1F97F43400FDF7A6 /* Localizable.strings in Resources */,
 				E06CFA4F1F97C0CD00344812 /* Assets.xcassets in Resources */,
 				E06CFA4D1F97C0CD00344812 /* Main.storyboard in Resources */,
 			);
@@ -371,7 +505,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0B23C141F97C60F00ECE992 /* Localizable.strings in Resources */,
+				E0C447EF1F97F43400FDF7A6 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +513,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0B23C151F97C60F00ECE992 /* Localizable.strings in Resources */,
+				E0C447F01F97F43400FDF7A6 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,9 +625,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CarBooking/Pods-CarBooking-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TRON/TRON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -537,12 +680,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E06CFA4A1F97C0CD00344812 /* SecondViewController.swift in Sources */,
+				E0C447EB1F97E6A000FDF7A6 /* Utility.swift in Sources */,
+				E06CFA4A1F97C0CD00344812 /* BookedVehiclesViewController.swift in Sources */,
+				E0B23C2C1F97D1D400ECE992 /* DataManager.swift in Sources */,
 				E06CFA461F97C0CD00344812 /* AppDelegate.swift in Sources */,
-				E06CFA481F97C0CD00344812 /* FirstViewController.swift in Sources */,
+				E06CFA481F97C0CD00344812 /* VehicleListViewController.swift in Sources */,
+				E0C447D41F97DAE700FDF7A6 /* Booking.swift in Sources */,
+				E0C447D81F97DAF800FDF7A6 /* BookingRequests.swift in Sources */,
+				E0C447D01F97DA5500FDF7A6 /* DataError.swift in Sources */,
+				E0C447DC1F97E35E00FDF7A6 /* DecodableArray.swift in Sources */,
 				E0B23C1D1F97C6AD00ECE992 /* AppColors.swift in Sources */,
+				E0B23C271F97CBDA00ECE992 /* TabBarController.swift in Sources */,
+				E0B23C3F1F97D5EC00ECE992 /* DataErrorObject.swift in Sources */,
+				E0B23C441F97D66400ECE992 /* UIViewController.swift in Sources */,
+				E0B23C351F97D44900ECE992 /* CarRequests.swift in Sources */,
+				E0C447E21F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */,
+				E0B23C3A1F97D4B900ECE992 /* Vehicle.swift in Sources */,
 				E0B23C181F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
+				E0B23C311F97D2FE00ECE992 /* Request.swift in Sources */,
 				E0B23C231F97C84900ECE992 /* ThemeManager.swift in Sources */,
+				E0C447E61F97E60F00FDF7A6 /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,10 +707,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B23C401F97D5EC00ECE992 /* DataErrorObject.swift in Sources */,
 				E0B23C1E1F97C6AD00ECE992 /* AppColors.swift in Sources */,
+				E0C447EC1F97E6A000FDF7A6 /* Utility.swift in Sources */,
+				E0B23C2D1F97D1D400ECE992 /* DataManager.swift in Sources */,
+				E0C447E31F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */,
+				E0B23C451F97D66400ECE992 /* UIViewController.swift in Sources */,
 				E06CFA5D1F97C0CD00344812 /* CarBookingTests.swift in Sources */,
+				E0C447D51F97DAE700FDF7A6 /* Booking.swift in Sources */,
 				E0B23C191F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
+				E0C447D11F97DA5500FDF7A6 /* DataError.swift in Sources */,
+				E0B23C321F97D2FE00ECE992 /* Request.swift in Sources */,
+				E0B23C3B1F97D4B900ECE992 /* Vehicle.swift in Sources */,
+				E0B23C281F97CBDA00ECE992 /* TabBarController.swift in Sources */,
+				E0C447D91F97DAF800FDF7A6 /* BookingRequests.swift in Sources */,
+				E0C447DD1F97E35E00FDF7A6 /* DecodableArray.swift in Sources */,
+				E0B23C361F97D44900ECE992 /* CarRequests.swift in Sources */,
 				E0B23C241F97C84900ECE992 /* ThemeManager.swift in Sources */,
+				E0C447E71F97E60F00FDF7A6 /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,10 +732,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B23C411F97D5EC00ECE992 /* DataErrorObject.swift in Sources */,
 				E0B23C1F1F97C6AD00ECE992 /* AppColors.swift in Sources */,
+				E0C447ED1F97E6A000FDF7A6 /* Utility.swift in Sources */,
+				E0B23C2E1F97D1D400ECE992 /* DataManager.swift in Sources */,
+				E0C447E41F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */,
+				E0B23C461F97D66400ECE992 /* UIViewController.swift in Sources */,
 				E06CFA681F97C0CD00344812 /* CarBookingUITests.swift in Sources */,
+				E0C447D61F97DAE700FDF7A6 /* Booking.swift in Sources */,
 				E0B23C1A1F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
+				E0C447D21F97DA5500FDF7A6 /* DataError.swift in Sources */,
+				E0B23C331F97D2FE00ECE992 /* Request.swift in Sources */,
+				E0B23C3C1F97D4B900ECE992 /* Vehicle.swift in Sources */,
+				E0B23C291F97CBDA00ECE992 /* TabBarController.swift in Sources */,
+				E0C447DA1F97DAF800FDF7A6 /* BookingRequests.swift in Sources */,
+				E0C447DE1F97E35E00FDF7A6 /* DecodableArray.swift in Sources */,
+				E0B23C371F97D44900ECE992 /* CarRequests.swift in Sources */,
 				E0B23C251F97C84900ECE992 /* ThemeManager.swift in Sources */,
+				E0C447E81F97E60F00FDF7A6 /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +783,14 @@
 				E06CFA511F97C0CD00344812 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E0C447F21F97F43400FDF7A6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0C447F11F97F43400FDF7A6 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import Reachability
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let reachability = Reachability()
+    
+    var  internetAlert: UIAlertController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         ThemeManager.apply()
+        
+        setupReachability()
+        
         return true
     }
 
@@ -41,6 +49,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func setupReachability() {
+        
+        guard let reachability = reachability else { return }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(_:)), name: .reachabilityChanged, object: reachability)
+        
+        try? reachability.startNotifier()
+    }
 
+    @objc func reachabilityChanged(_ notification: Notification) {
+        
+        guard let reachability = notification.object as? Reachability else { return }
+        
+        switch reachability.connection {
+        case .wifi:
+            reachableInternet()
+        case .cellular:
+            reachableInternet()
+        case .none:
+            alertNoInternet()
+        }
+    }
+    
+    func alertNoInternet() {
+        let alert = UIAlertController.init(title: "Alert".localized,
+                                           message: "Internet is lost.\nPlease check your internet connection!".localized, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction.init(title: "Ok".localized, style: .default, handler: nil))
+        
+        window?.rootViewController?.present(alert, animated: true, completion: {
+            self.internetAlert = alert
+        })
+    }
+    
+    func reachableInternet() {
+        internetAlert?.dismiss(animated: true)
+    }
 }
 

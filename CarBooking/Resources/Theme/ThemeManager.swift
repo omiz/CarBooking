@@ -17,6 +17,11 @@ struct ThemeManager {
         
         UITabBar.appearance().barTintColor = .primary
         UITabBar.appearance().tintColor = .secondary
+        UITabBar.appearance().isTranslucent = false
+        
+        UINavigationBar.appearance().barTintColor = .primary
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.accent]
+        UINavigationBar.appearance().isTranslucent = false
         
         UISwitch.appearance().onTintColor = UIColor.primary.withAlphaComponent(0.3)
         UISwitch.appearance().thumbTintColor = .primary
