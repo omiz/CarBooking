@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05AD77FDEE6D1969E8DD7E20 /* Pods_CarBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFCD14CA81B3183F7CFE012 /* Pods_CarBooking.framework */; };
+		23982C5D9A2B2A6FF2ACA069 /* Pods_CarBookingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59FE8A075E9D07BD21EC729 /* Pods_CarBookingUITests.framework */; };
+		383694CB730BA687F6E36342 /* Pods_CarBookingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7340F2BAF2F6768D9BA013 /* Pods_CarBookingTests.framework */; };
+		E06CFA461F97C0CD00344812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA451F97C0CD00344812 /* AppDelegate.swift */; };
+		E06CFA481F97C0CD00344812 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA471F97C0CD00344812 /* FirstViewController.swift */; };
+		E06CFA4A1F97C0CD00344812 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA491F97C0CD00344812 /* SecondViewController.swift */; };
+		E06CFA4D1F97C0CD00344812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06CFA4B1F97C0CD00344812 /* Main.storyboard */; };
+		E06CFA4F1F97C0CD00344812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06CFA4E1F97C0CD00344812 /* Assets.xcassets */; };
+		E06CFA521F97C0CD00344812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06CFA501F97C0CD00344812 /* LaunchScreen.storyboard */; };
+		E06CFA5D1F97C0CD00344812 /* CarBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA5C1F97C0CD00344812 /* CarBookingTests.swift */; };
+		E06CFA681F97C0CD00344812 /* CarBookingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFA671F97C0CD00344812 /* CarBookingUITests.swift */; };
+		E0B23C131F97C60F00ECE992 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B23C121F97C60F00ECE992 /* Localizable.strings */; };
+		E0B23C141F97C60F00ECE992 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B23C121F97C60F00ECE992 /* Localizable.strings */; };
+		E0B23C151F97C60F00ECE992 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B23C121F97C60F00ECE992 /* Localizable.strings */; };
+		E0B23C181F97C63500ECE992 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */; };
+		E0B23C191F97C63500ECE992 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */; };
+		E0B23C1A1F97C63500ECE992 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */; };
+		E0B23C1D1F97C6AD00ECE992 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C1C1F97C6AD00ECE992 /* AppColors.swift */; };
+		E0B23C1E1F97C6AD00ECE992 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C1C1F97C6AD00ECE992 /* AppColors.swift */; };
+		E0B23C1F1F97C6AD00ECE992 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C1C1F97C6AD00ECE992 /* AppColors.swift */; };
+		E0B23C231F97C84900ECE992 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C221F97C84900ECE992 /* ThemeManager.swift */; };
+		E0B23C241F97C84900ECE992 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C221F97C84900ECE992 /* ThemeManager.swift */; };
+		E0B23C251F97C84900ECE992 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C221F97C84900ECE992 /* ThemeManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E06CFA591F97C0CD00344812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E06CFA3A1F97C0CD00344812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E06CFA411F97C0CD00344812;
+			remoteInfo = CarBooking;
+		};
+		E06CFA641F97C0CD00344812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E06CFA3A1F97C0CD00344812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E06CFA411F97C0CD00344812;
+			remoteInfo = CarBooking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34F689CBE57DF4129F9CF9A9 /* Pods-CarBookingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D7340F2BAF2F6768D9BA013 /* Pods_CarBookingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBookingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BDBE3E39AE2044AE2C7C45 /* Pods-CarBookingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarBookingUITests/Pods-CarBookingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		98FBB71D19B3F561BA78BDA4 /* Pods-CarBookingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB494EDA06D7EAFDF0AB0C4A /* Pods-CarBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarBooking/Pods-CarBooking.release.xcconfig"; sourceTree = "<group>"; };
+		C44B854176419DA172C122F4 /* Pods-CarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBooking/Pods-CarBooking.debug.xcconfig"; sourceTree = "<group>"; };
+		D59FE8A075E9D07BD21EC729 /* Pods_CarBookingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBookingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFCD14CA81B3183F7CFE012 /* Pods_CarBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06CFA421F97C0CD00344812 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06CFA451F97C0CD00344812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E06CFA471F97C0CD00344812 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E06CFA491F97C0CD00344812 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E06CFA4C1F97C0CD00344812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E06CFA4E1F97C0CD00344812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E06CFA511F97C0CD00344812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E06CFA531F97C0CD00344812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06CFA581F97C0CD00344812 /* CarBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06CFA5C1F97C0CD00344812 /* CarBookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingTests.swift; sourceTree = "<group>"; };
+		E06CFA5E1F97C0CD00344812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06CFA631F97C0CD00344812 /* CarBookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06CFA671F97C0CD00344812 /* CarBookingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingUITests.swift; sourceTree = "<group>"; };
+		E06CFA691F97C0CD00344812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0B23C121F97C60F00ECE992 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		E0B23C1C1F97C6AD00ECE992 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		E0B23C221F97C84900ECE992 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		F309E78F87AD5BA4BDD69852 /* Pods-CarBookingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBookingUITests/Pods-CarBookingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E06CFA3F1F97C0CD00344812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05AD77FDEE6D1969E8DD7E20 /* Pods_CarBooking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06CFA551F97C0CD00344812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383694CB730BA687F6E36342 /* Pods_CarBookingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06CFA601F97C0CD00344812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23982C5D9A2B2A6FF2ACA069 /* Pods_CarBookingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CB64897E9C9F92573504A17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C44B854176419DA172C122F4 /* Pods-CarBooking.debug.xcconfig */,
+				AB494EDA06D7EAFDF0AB0C4A /* Pods-CarBooking.release.xcconfig */,
+				98FBB71D19B3F561BA78BDA4 /* Pods-CarBookingTests.debug.xcconfig */,
+				34F689CBE57DF4129F9CF9A9 /* Pods-CarBookingTests.release.xcconfig */,
+				F309E78F87AD5BA4BDD69852 /* Pods-CarBookingUITests.debug.xcconfig */,
+				76BDBE3E39AE2044AE2C7C45 /* Pods-CarBookingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6FD11F0B8B86B61F63A86B9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAFCD14CA81B3183F7CFE012 /* Pods_CarBooking.framework */,
+				4D7340F2BAF2F6768D9BA013 /* Pods_CarBookingTests.framework */,
+				D59FE8A075E9D07BD21EC729 /* Pods_CarBookingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E06CFA391F97C0CD00344812 = {
+			isa = PBXGroup;
+			children = (
+				E06CFA441F97C0CD00344812 /* CarBooking */,
+				E06CFA5B1F97C0CD00344812 /* CarBookingTests */,
+				E06CFA661F97C0CD00344812 /* CarBookingUITests */,
+				E06CFA431F97C0CD00344812 /* Products */,
+				0CB64897E9C9F92573504A17 /* Pods */,
+				6FD11F0B8B86B61F63A86B9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E06CFA431F97C0CD00344812 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E06CFA421F97C0CD00344812 /* CarBooking.app */,
+				E06CFA581F97C0CD00344812 /* CarBookingTests.xctest */,
+				E06CFA631F97C0CD00344812 /* CarBookingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E06CFA441F97C0CD00344812 /* CarBooking */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C101F97C54500ECE992 /* Classes */,
+				E06CFA751F97C2EE00344812 /* Resources */,
+				E06CFA451F97C0CD00344812 /* AppDelegate.swift */,
+				E06CFA4B1F97C0CD00344812 /* Main.storyboard */,
+				E06CFA501F97C0CD00344812 /* LaunchScreen.storyboard */,
+				E06CFA531F97C0CD00344812 /* Info.plist */,
+			);
+			path = CarBooking;
+			sourceTree = "<group>";
+		};
+		E06CFA5B1F97C0CD00344812 /* CarBookingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E06CFA5C1F97C0CD00344812 /* CarBookingTests.swift */,
+				E06CFA5E1F97C0CD00344812 /* Info.plist */,
+			);
+			path = CarBookingTests;
+			sourceTree = "<group>";
+		};
+		E06CFA661F97C0CD00344812 /* CarBookingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E06CFA671F97C0CD00344812 /* CarBookingUITests.swift */,
+				E06CFA691F97C0CD00344812 /* Info.plist */,
+			);
+			path = CarBookingUITests;
+			sourceTree = "<group>";
+		};
+		E06CFA751F97C2EE00344812 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C211F97C83200ECE992 /* Theme */,
+				E0B23C201F97C78300ECE992 /* Assets */,
+				E0B23C1B1F97C69200ECE992 /* Colors */,
+				E0B23C161F97C61900ECE992 /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E0B23C101F97C54500ECE992 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C111F97C55200ECE992 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E0B23C111F97C55200ECE992 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E06CFA471F97C0CD00344812 /* FirstViewController.swift */,
+				E06CFA491F97C0CD00344812 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E0B23C161F97C61900ECE992 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C121F97C60F00ECE992 /* Localizable.strings */,
+				E0B23C171F97C63500ECE992 /* LocalizableStrings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		E0B23C1B1F97C69200ECE992 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C1C1F97C6AD00ECE992 /* AppColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		E0B23C201F97C78300ECE992 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E06CFA4E1F97C0CD00344812 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E0B23C211F97C83200ECE992 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E0B23C221F97C84900ECE992 /* ThemeManager.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E06CFA411F97C0CD00344812 /* CarBooking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06CFA6C1F97C0CD00344812 /* Build configuration list for PBXNativeTarget "CarBooking" */;
+			buildPhases = (
+				1188365776DABA54E25B80AD /* [CP] Check Pods Manifest.lock */,
+				E06CFA3E1F97C0CD00344812 /* Sources */,
+				E06CFA3F1F97C0CD00344812 /* Frameworks */,
+				E06CFA401F97C0CD00344812 /* Resources */,
+				D448B8554BE9A7D7EE717235 /* [CP] Embed Pods Frameworks */,
+				6FE8285E6AFCC279F6E8256A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarBooking;
+			productName = CarBooking;
+			productReference = E06CFA421F97C0CD00344812 /* CarBooking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E06CFA571F97C0CD00344812 /* CarBookingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06CFA6F1F97C0CD00344812 /* Build configuration list for PBXNativeTarget "CarBookingTests" */;
+			buildPhases = (
+				C5D226E47B5BAA06821557CA /* [CP] Check Pods Manifest.lock */,
+				E06CFA541F97C0CD00344812 /* Sources */,
+				E06CFA551F97C0CD00344812 /* Frameworks */,
+				E06CFA561F97C0CD00344812 /* Resources */,
+				760D76EACE5FF2B3C1BAB285 /* [CP] Embed Pods Frameworks */,
+				B4574DE7A06ADDB0F03F1535 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E06CFA5A1F97C0CD00344812 /* PBXTargetDependency */,
+			);
+			name = CarBookingTests;
+			productName = CarBookingTests;
+			productReference = E06CFA581F97C0CD00344812 /* CarBookingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E06CFA621F97C0CD00344812 /* CarBookingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06CFA721F97C0CD00344812 /* Build configuration list for PBXNativeTarget "CarBookingUITests" */;
+			buildPhases = (
+				3FE90D68E43223000AAF4201 /* [CP] Check Pods Manifest.lock */,
+				E06CFA5F1F97C0CD00344812 /* Sources */,
+				E06CFA601F97C0CD00344812 /* Frameworks */,
+				E06CFA611F97C0CD00344812 /* Resources */,
+				E5689ED7A6FD77045CE5D7D1 /* [CP] Embed Pods Frameworks */,
+				EEA3EC3ABA6A244D7E2EE6DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E06CFA651F97C0CD00344812 /* PBXTargetDependency */,
+			);
+			name = CarBookingUITests;
+			productName = CarBookingUITests;
+			productReference = E06CFA631F97C0CD00344812 /* CarBookingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E06CFA3A1F97C0CD00344812 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Omar Allaham";
+				TargetAttributes = {
+					E06CFA411F97C0CD00344812 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					E06CFA571F97C0CD00344812 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E06CFA411F97C0CD00344812;
+					};
+					E06CFA621F97C0CD00344812 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E06CFA411F97C0CD00344812;
+					};
+				};
+			};
+			buildConfigurationList = E06CFA3D1F97C0CD00344812 /* Build configuration list for PBXProject "CarBooking" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E06CFA391F97C0CD00344812;
+			productRefGroup = E06CFA431F97C0CD00344812 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E06CFA411F97C0CD00344812 /* CarBooking */,
+				E06CFA571F97C0CD00344812 /* CarBookingTests */,
+				E06CFA621F97C0CD00344812 /* CarBookingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E06CFA401F97C0CD00344812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06CFA521F97C0CD00344812 /* LaunchScreen.storyboard in Resources */,
+				E0B23C131F97C60F00ECE992 /* Localizable.strings in Resources */,
+				E06CFA4F1F97C0CD00344812 /* Assets.xcassets in Resources */,
+				E06CFA4D1F97C0CD00344812 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06CFA561F97C0CD00344812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B23C141F97C60F00ECE992 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06CFA611F97C0CD00344812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B23C151F97C60F00ECE992 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1188365776DABA54E25B80AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarBooking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE90D68E43223000AAF4201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarBookingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE8285E6AFCC279F6E8256A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBooking/Pods-CarBooking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760D76EACE5FF2B3C1BAB285 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4574DE7A06ADDB0F03F1535 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D226E47B5BAA06821557CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarBookingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D448B8554BE9A7D7EE717235 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBooking/Pods-CarBooking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5689ED7A6FD77045CE5D7D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBookingUITests/Pods-CarBookingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA3EC3ABA6A244D7E2EE6DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBookingUITests/Pods-CarBookingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E06CFA3E1F97C0CD00344812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06CFA4A1F97C0CD00344812 /* SecondViewController.swift in Sources */,
+				E06CFA461F97C0CD00344812 /* AppDelegate.swift in Sources */,
+				E06CFA481F97C0CD00344812 /* FirstViewController.swift in Sources */,
+				E0B23C1D1F97C6AD00ECE992 /* AppColors.swift in Sources */,
+				E0B23C181F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
+				E0B23C231F97C84900ECE992 /* ThemeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06CFA541F97C0CD00344812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B23C1E1F97C6AD00ECE992 /* AppColors.swift in Sources */,
+				E06CFA5D1F97C0CD00344812 /* CarBookingTests.swift in Sources */,
+				E0B23C191F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
+				E0B23C241F97C84900ECE992 /* ThemeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06CFA5F1F97C0CD00344812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B23C1F1F97C6AD00ECE992 /* AppColors.swift in Sources */,
+				E06CFA681F97C0CD00344812 /* CarBookingUITests.swift in Sources */,
+				E0B23C1A1F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
+				E0B23C251F97C84900ECE992 /* ThemeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E06CFA5A1F97C0CD00344812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E06CFA411F97C0CD00344812 /* CarBooking */;
+			targetProxy = E06CFA591F97C0CD00344812 /* PBXContainerItemProxy */;
+		};
+		E06CFA651F97C0CD00344812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E06CFA411F97C0CD00344812 /* CarBooking */;
+			targetProxy = E06CFA641F97C0CD00344812 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E06CFA4B1F97C0CD00344812 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06CFA4C1F97C0CD00344812 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E06CFA501F97C0CD00344812 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06CFA511F97C0CD00344812 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E06CFA6A1F97C0CD00344812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E06CFA6B1F97C0CD00344812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E06CFA6D1F97C0CD00344812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44B854176419DA172C122F4 /* Pods-CarBooking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 673RZ8M34Z;
+				INFOPLIST_FILE = CarBooking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intive-kupferwerk.CarBooking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E06CFA6E1F97C0CD00344812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB494EDA06D7EAFDF0AB0C4A /* Pods-CarBooking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 673RZ8M34Z;
+				INFOPLIST_FILE = CarBooking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intive-kupferwerk.CarBooking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E06CFA701F97C0CD00344812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FBB71D19B3F561BA78BDA4 /* Pods-CarBookingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarBookingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intive-kupferwerk.CarBookingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBooking.app/CarBooking";
+			};
+			name = Debug;
+		};
+		E06CFA711F97C0CD00344812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F689CBE57DF4129F9CF9A9 /* Pods-CarBookingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarBookingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intive-kupferwerk.CarBookingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBooking.app/CarBooking";
+			};
+			name = Release;
+		};
+		E06CFA731F97C0CD00344812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F309E78F87AD5BA4BDD69852 /* Pods-CarBookingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarBookingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intive-kupferwerk.CarBookingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarBooking;
+			};
+			name = Debug;
+		};
+		E06CFA741F97C0CD00344812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76BDBE3E39AE2044AE2C7C45 /* Pods-CarBookingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarBookingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intive-kupferwerk.CarBookingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarBooking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E06CFA3D1F97C0CD00344812 /* Build configuration list for PBXProject "CarBooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06CFA6A1F97C0CD00344812 /* Debug */,
+				E06CFA6B1F97C0CD00344812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06CFA6C1F97C0CD00344812 /* Build configuration list for PBXNativeTarget "CarBooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06CFA6D1F97C0CD00344812 /* Debug */,
+				E06CFA6E1F97C0CD00344812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06CFA6F1F97C0CD00344812 /* Build configuration list for PBXNativeTarget "CarBookingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06CFA701F97C0CD00344812 /* Debug */,
+				E06CFA711F97C0CD00344812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06CFA721F97C0CD00344812 /* Build configuration list for PBXNativeTarget "CarBookingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06CFA731F97C0CD00344812 /* Debug */,
+				E06CFA741F97C0CD00344812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E06CFA3A1F97C0CD00344812 /* Project object */;
+}

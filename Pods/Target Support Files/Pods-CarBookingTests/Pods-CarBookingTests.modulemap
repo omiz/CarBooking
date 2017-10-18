@@ -1,0 +1,6 @@
+framework module Pods_CarBookingTests {
+  umbrella header "Pods-CarBookingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
