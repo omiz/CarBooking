@@ -57,8 +57,6 @@ class VehicleDetailViewController: UIViewController, UIScrollViewDelegate {
         BookButton.layer.cornerRadius = 5
         BookButton.layer.masksToBounds = true
         BookButton.backgroundColor = .accent
-        
-        print("top", buttonsView.frame.origin.y)
     }
     
     func setupImageViewHeight() {
