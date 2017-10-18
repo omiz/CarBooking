@@ -15,7 +15,7 @@ class DataManager {
         return baseURL.contains("-test")
     }
     
-    fileprivate static var baseURL: String {
+    static var baseURL: String {
         return "http://job-applicants-dummy-api.kupferwerk.net.s3.amazonaws.com/"
     }
     

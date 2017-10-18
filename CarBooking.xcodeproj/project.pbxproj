@@ -36,9 +36,9 @@
 		E0B23C311F97D2FE00ECE992 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C301F97D2FE00ECE992 /* Request.swift */; };
 		E0B23C321F97D2FE00ECE992 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C301F97D2FE00ECE992 /* Request.swift */; };
 		E0B23C331F97D2FE00ECE992 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C301F97D2FE00ECE992 /* Request.swift */; };
-		E0B23C351F97D44900ECE992 /* CarRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* CarRequests.swift */; };
-		E0B23C361F97D44900ECE992 /* CarRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* CarRequests.swift */; };
-		E0B23C371F97D44900ECE992 /* CarRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* CarRequests.swift */; };
+		E0B23C351F97D44900ECE992 /* VehicleRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* VehicleRequests.swift */; };
+		E0B23C361F97D44900ECE992 /* VehicleRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* VehicleRequests.swift */; };
+		E0B23C371F97D44900ECE992 /* VehicleRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C341F97D44900ECE992 /* VehicleRequests.swift */; };
 		E0B23C3A1F97D4B900ECE992 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C391F97D4B900ECE992 /* Vehicle.swift */; };
 		E0B23C3B1F97D4B900ECE992 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C391F97D4B900ECE992 /* Vehicle.swift */; };
 		E0B23C3C1F97D4B900ECE992 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B23C391F97D4B900ECE992 /* Vehicle.swift */; };
@@ -72,6 +72,15 @@
 		E0C447EE1F97F43400FDF7A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0C447F21F97F43400FDF7A6 /* Localizable.strings */; };
 		E0C447EF1F97F43400FDF7A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0C447F21F97F43400FDF7A6 /* Localizable.strings */; };
 		E0C447F01F97F43400FDF7A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0C447F21F97F43400FDF7A6 /* Localizable.strings */; };
+		E0C447F41F98063700FDF7A6 /* VehicleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447F31F98063700FDF7A6 /* VehicleDetail.swift */; };
+		E0C447F51F98063700FDF7A6 /* VehicleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447F31F98063700FDF7A6 /* VehicleDetail.swift */; };
+		E0C447F61F98063700FDF7A6 /* VehicleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447F31F98063700FDF7A6 /* VehicleDetail.swift */; };
+		E0C447F81F9807BC00FDF7A6 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447F71F9807BC00FDF7A6 /* VehicleDetailViewController.swift */; };
+		E0C447F91F9807BC00FDF7A6 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447F71F9807BC00FDF7A6 /* VehicleDetailViewController.swift */; };
+		E0C447FA1F9807BC00FDF7A6 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447F71F9807BC00FDF7A6 /* VehicleDetailViewController.swift */; };
+		E0C447FC1F980DEB00FDF7A6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */; };
+		E0C447FD1F980DEB00FDF7A6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */; };
+		E0C447FE1F980DEB00FDF7A6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +129,7 @@
 		E0B23C261F97CBDA00ECE992 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E0B23C2B1F97D1D400ECE992 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E0B23C301F97D2FE00ECE992 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		E0B23C341F97D44900ECE992 /* CarRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRequests.swift; sourceTree = "<group>"; };
+		E0B23C341F97D44900ECE992 /* VehicleRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRequests.swift; sourceTree = "<group>"; };
 		E0B23C391F97D4B900ECE992 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		E0B23C3E1F97D5EC00ECE992 /* DataErrorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataErrorObject.swift; sourceTree = "<group>"; };
 		E0B23C431F97D66400ECE992 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +141,9 @@
 		E0C447E51F97E60F00FDF7A6 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		E0C447EA1F97E6A000FDF7A6 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		E0C447F11F97F43400FDF7A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E0C447F31F98063700FDF7A6 /* VehicleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetail.swift; sourceTree = "<group>"; };
+		E0C447F71F9807BC00FDF7A6 /* VehicleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewController.swift; sourceTree = "<group>"; };
+		E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		F309E78F87AD5BA4BDD69852 /* Pods-CarBookingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBookingUITests/Pods-CarBookingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,6 +280,7 @@
 				E06CFA471F97C0CD00344812 /* VehicleListViewController.swift */,
 				E06CFA491F97C0CD00344812 /* BookedVehiclesViewController.swift */,
 				E0B23C261F97CBDA00ECE992 /* TabBarController.swift */,
+				E0C447F71F9807BC00FDF7A6 /* VehicleDetailViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -320,7 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				E0B23C301F97D2FE00ECE992 /* Request.swift */,
-				E0B23C341F97D44900ECE992 /* CarRequests.swift */,
+				E0B23C341F97D44900ECE992 /* VehicleRequests.swift */,
 				E0C447D71F97DAF800FDF7A6 /* BookingRequests.swift */,
 			);
 			path = Requests;
@@ -332,6 +345,7 @@
 				E0B23C391F97D4B900ECE992 /* Vehicle.swift */,
 				E0C447D31F97DAE700FDF7A6 /* Booking.swift */,
 				E0C447DB1F97E35E00FDF7A6 /* DecodableArray.swift */,
+				E0C447F31F98063700FDF7A6 /* VehicleDetail.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -350,6 +364,7 @@
 			children = (
 				E0B23C431F97D66400ECE992 /* UIViewController.swift */,
 				E0C447E51F97E60F00FDF7A6 /* UICollectionView.swift */,
+				E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -627,6 +642,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CarBooking/Pods-CarBooking-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TRON/TRON.framework",
@@ -634,6 +650,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRON.framework",
@@ -693,13 +710,16 @@
 				E0B23C271F97CBDA00ECE992 /* TabBarController.swift in Sources */,
 				E0B23C3F1F97D5EC00ECE992 /* DataErrorObject.swift in Sources */,
 				E0B23C441F97D66400ECE992 /* UIViewController.swift in Sources */,
-				E0B23C351F97D44900ECE992 /* CarRequests.swift in Sources */,
+				E0B23C351F97D44900ECE992 /* VehicleRequests.swift in Sources */,
 				E0C447E21F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */,
 				E0B23C3A1F97D4B900ECE992 /* Vehicle.swift in Sources */,
+				E0C447F81F9807BC00FDF7A6 /* VehicleDetailViewController.swift in Sources */,
 				E0B23C181F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
 				E0B23C311F97D2FE00ECE992 /* Request.swift in Sources */,
+				E0C447FC1F980DEB00FDF7A6 /* UIImageView.swift in Sources */,
 				E0B23C231F97C84900ECE992 /* ThemeManager.swift in Sources */,
 				E0C447E61F97E60F00FDF7A6 /* UICollectionView.swift in Sources */,
+				E0C447F41F98063700FDF7A6 /* VehicleDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,13 +737,16 @@
 				E0C447D51F97DAE700FDF7A6 /* Booking.swift in Sources */,
 				E0B23C191F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
 				E0C447D11F97DA5500FDF7A6 /* DataError.swift in Sources */,
+				E0C447F51F98063700FDF7A6 /* VehicleDetail.swift in Sources */,
 				E0B23C321F97D2FE00ECE992 /* Request.swift in Sources */,
 				E0B23C3B1F97D4B900ECE992 /* Vehicle.swift in Sources */,
 				E0B23C281F97CBDA00ECE992 /* TabBarController.swift in Sources */,
 				E0C447D91F97DAF800FDF7A6 /* BookingRequests.swift in Sources */,
 				E0C447DD1F97E35E00FDF7A6 /* DecodableArray.swift in Sources */,
-				E0B23C361F97D44900ECE992 /* CarRequests.swift in Sources */,
+				E0C447FD1F980DEB00FDF7A6 /* UIImageView.swift in Sources */,
+				E0B23C361F97D44900ECE992 /* VehicleRequests.swift in Sources */,
 				E0B23C241F97C84900ECE992 /* ThemeManager.swift in Sources */,
+				E0C447F91F9807BC00FDF7A6 /* VehicleDetailViewController.swift in Sources */,
 				E0C447E71F97E60F00FDF7A6 /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -742,13 +765,16 @@
 				E0C447D61F97DAE700FDF7A6 /* Booking.swift in Sources */,
 				E0B23C1A1F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
 				E0C447D21F97DA5500FDF7A6 /* DataError.swift in Sources */,
+				E0C447F61F98063700FDF7A6 /* VehicleDetail.swift in Sources */,
 				E0B23C331F97D2FE00ECE992 /* Request.swift in Sources */,
 				E0B23C3C1F97D4B900ECE992 /* Vehicle.swift in Sources */,
 				E0B23C291F97CBDA00ECE992 /* TabBarController.swift in Sources */,
 				E0C447DA1F97DAF800FDF7A6 /* BookingRequests.swift in Sources */,
 				E0C447DE1F97E35E00FDF7A6 /* DecodableArray.swift in Sources */,
-				E0B23C371F97D44900ECE992 /* CarRequests.swift in Sources */,
+				E0C447FE1F980DEB00FDF7A6 /* UIImageView.swift in Sources */,
+				E0B23C371F97D44900ECE992 /* VehicleRequests.swift in Sources */,
 				E0B23C251F97C84900ECE992 /* ThemeManager.swift in Sources */,
+				E0C447FA1F9807BC00FDF7A6 /* VehicleDetailViewController.swift in Sources */,
 				E0C447E81F97E60F00FDF7A6 /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

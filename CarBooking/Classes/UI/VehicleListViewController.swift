@@ -123,6 +123,19 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: segue)
+        
+        setupDetailIndexIfNeeded(in: segue)
+    }
+    
+    func setupDetailIndexIfNeeded(in segue: UIStoryboardSegue) {
+        
+        guard let controller = segue.destination as? VehicleDetailViewController else { return }
+        
+        controller.vehicleId = collectionView.indexPathsForSelectedItems?.first?.row
+    }
+    
     deinit {
         request?.cancel()
     }

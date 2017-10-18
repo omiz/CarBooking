@@ -21,4 +21,9 @@ struct VehicleRequests {
         let request: APIRequest<DecodableArray<Vehicle>,DataErrorObject> = tron.request("cars.json")
         return request
     }
+    
+    func detail(for id: Int) -> APIRequest<VehicleDetail,DataErrorObject> {
+        let request: APIRequest<VehicleDetail,DataErrorObject> = tron.request("cars/\(id).json")
+        return request
+    }
 }

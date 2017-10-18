@@ -2,8 +2,14 @@
 
 platform :ios, '8.0'
 
+#https://github.com/MLSDev/TRON
 pod 'TRON'
+
+#https://github.com/ashleymills/Reachability.swift
 pod 'ReachabilitySwift'
+
+#https://github.com/onevcat/Kingfisher
+pod 'Kingfisher'
 
 target 'CarBooking' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
