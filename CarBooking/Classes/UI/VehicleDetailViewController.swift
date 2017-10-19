@@ -45,6 +45,9 @@ class VehicleDetailViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func prepareView() {
+        
+        navigationItem.title = "Vehicle".localized
+        
         nameLabel.adjustsFontSizeToFitWidth = true
         shortDescriptionLabel.adjustsFontSizeToFitWidth = true
         
@@ -149,6 +152,28 @@ class VehicleDetailViewController: UIViewController, UIScrollViewDelegate {
         headerConstraint.constant = max(-offset.y, 0)
         
         view.layoutIfNeeded()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: segue)
+        
+        setupDetailIndexIfNeeded(in: segue)
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        guard vehicle != nil else { return false }
+        
+        return super.shouldPerformSegue(withIdentifier: identifier, sender: sender)
+    }
+    
+    func setupDetailIndexIfNeeded(in segue: UIStoryboardSegue) {
+        
+        guard let controller = segue.destination as? BookingDetailViewController else { return }
+        
+        guard let vehicle = vehicle else { return }
+        
+        controller.booking = Booking(vehicle: vehicle)
     }
 
     deinit {

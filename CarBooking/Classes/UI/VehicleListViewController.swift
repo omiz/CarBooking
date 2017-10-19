@@ -70,7 +70,7 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     func handleResponse(_ array: [Vehicle]) {
-        dataSource = array
+        dataSource = array.sorted { $0.name < $1.name }
         collectionView.reloadData()
     }
     
@@ -133,7 +133,9 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
         
         guard let controller = segue.destination as? VehicleDetailViewController else { return }
         
-        controller.vehicleId = collectionView.indexPathsForSelectedItems?.first?.row
+        guard let index = collectionView.indexPathsForSelectedItems?.first?.row else { return }
+        
+        controller.vehicleId = dataSource[index].id
     }
     
     deinit {

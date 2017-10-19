@@ -24,6 +24,17 @@ class VehicleCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        setupView()
+    }
+    
+    func setupView() {
+        containerView.backgroundColor = .primary
+        containerView.layer.cornerRadius = 6
+        containerView.layer.masksToBounds = true
+        
+        nameTextLabel.textColor = .accent
+        descriptionTextLabel.textColor = .accent
     }
     
     
