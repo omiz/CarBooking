@@ -29,6 +29,18 @@ class BookingConfirmationViewController: UIViewController {
     
     var duration: Int?
     
+    var booking: Booking? {
+        guard let vehicle = vehicle else { return nil }
+        
+        let book = Booking(vehicle: vehicle)
+        
+        book.date = date
+        
+        book.duration = duration
+        
+        return book
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,13 +69,7 @@ class BookingConfirmationViewController: UIViewController {
         
         titleLabel.text = "Confirmation".localized
         
-        let name = vehicle?.name ?? ""
-        let date = self.date?.formatted ?? ""
-        let duration = self.duration?.description ?? ""
-        
-        let day = self.duration ?? 0 > 1 ? "days" : "day"
-        
-        descriptionLabel.text = String(format: "Booking %@ for %@ %@ starting %@", name, duration, day, date)
+        descriptionLabel.text = booking?.localizedDescription
     }
     
     func setupColors() {
@@ -94,15 +100,9 @@ class BookingConfirmationViewController: UIViewController {
     
     @IBAction func bookingAction(_ sender: UIButton) {
         
-        guard let vehicle = vehicle else { return }
-        
-        let book = Booking(vehicle: vehicle)
-        
-        book.date = date
-        
-        book.duration = duration
-        
-        DataManager.shared.bookings.book(book).load(database: handle(database:))
+        guard let booking = booking else { return }
+
+        DataManager.shared.bookings.book(booking).load(database: handle(database:))
     }
     
     func handle(success booking: Booking) {
@@ -118,7 +118,14 @@ class BookingConfirmationViewController: UIViewController {
                                       message: "Your Booking has been saved".localized,
                                       preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+        alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: { _ in
+            self.dismiss(animated: true)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Notify me when it starts", style: .default, handler: { _ in
+            //TODO: handle empty date
+            guard let date = booking?.date else { return }
+            booking?.addNotification(at: date)
             self.dismiss(animated: true)
         }))
         

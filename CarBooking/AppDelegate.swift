@@ -8,17 +8,24 @@
 
 import UIKit
 import Reachability
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
     let reachability = Reachability()
     
     var  internetAlert: UIAlertController?
+    
+    var tabBarController: TabBarController? {
+        return window?.rootViewController as? TabBarController
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        UNUserNotificationCenter.current().delegate = self
         
         ThemeManager.apply()
         
@@ -47,6 +54,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        guard response.notification.request.content.categoryIdentifier.starts(with: Booking.notificationId) else { return }
+        
+        UIApplication.shared.applicationIconBadgeNumber = UIApplication.shared.applicationIconBadgeNumber - 1
+        
+        let userInfo = response.notification.request.content.userInfo
+        
+        guard let id = userInfo["id"] as? Int else { return }
+        
+        tabBarController?.selectedIndex = 1
+        
+        print("load booking with id:", id)
+        
+        completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
     }
 
     func setupReachability() {
