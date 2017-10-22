@@ -51,15 +51,12 @@ class VehicleDetailViewController: UIViewController, UIScrollViewDelegate {
         nameLabel.adjustsFontSizeToFitWidth = true
         shortDescriptionLabel.adjustsFontSizeToFitWidth = true
         
-        buttonsView.layer.cornerRadius = 5
-        buttonsView.layer.masksToBounds = true
-        buttonsView.backgroundColor = .secondary
+        buttonsView.layer.cornerRadius = cornerRadius
+        buttonsView.backgroundColor = .primary
         
         BookButton.setTitle("Book".localized, for: .normal)
         
-        BookButton.layer.cornerRadius = 5
-        BookButton.layer.masksToBounds = true
-        BookButton.backgroundColor = .accent
+        BookButton.layer.cornerRadius = cornerRadius
     }
     
     func setupImageViewHeight() {
@@ -111,7 +108,7 @@ class VehicleDetailViewController: UIViewController, UIScrollViewDelegate {
         
         request?.cancel()
         
-        request = DataManager.shared.vehicles.detail(for: id).reload(success: {
+        request = DataManager.shared.vehicles.detail(for: id).load(success: {
             self.handleResponse($0)
             self.stopReloadProccess()
         }, failure: { _ in
@@ -169,11 +166,11 @@ class VehicleDetailViewController: UIViewController, UIScrollViewDelegate {
     
     func setupDetailIndexIfNeeded(in segue: UIStoryboardSegue) {
         
-        guard let controller = segue.destination as? BookingDetailViewController else { return }
+        guard let navigationController = segue.destination as? UINavigationController else { return }
         
-        guard let vehicle = vehicle else { return }
+        guard let controller = navigationController.viewControllers.first as? BookingDateViewController else { return }
         
-        controller.booking = Booking(vehicle: vehicle)
+        controller.vehicle = vehicle
     }
 
     deinit {

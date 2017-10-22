@@ -12,11 +12,23 @@ import Foundation
 import SwiftyJSON
 import TRON
 
-class DecodableArray<Element: JSONDecodable>: NSObject, JSONDecodable {
+protocol JSONDecodableArray: BaseObject {
+    
+    associatedtype Element
+    
+    var array: [Element] { get }
+}
+
+class DecodableArray<E: JSONDecodable>: NSObject, NSCoding, JSONDecodableArray {
+    
+    var id: Int = 0
+    
+    typealias Element = E
+    
     
     let rawValue: String
     
-    let array: [Element]
+    let array: [E]
     
     override var description: String {
         return rawValue
@@ -35,5 +47,20 @@ class DecodableArray<Element: JSONDecodable>: NSObject, JSONDecodable {
         array = json.arrayValue.map { try? Element(json: $0) }.filter { $0 != nil } as? [Element] ?? []
         
         rawValue = json.description
+    }
+    
+    required init(coder decoder: NSCoder) {
+        rawValue = decoder.decodeObject(forKey: "rawValue") as? String ?? ""
+        array = decoder.decodeObject(forKey: "array")  as? [Element] ?? []
+    }
+    
+    
+    func encode(with coder: NSCoder) {
+        coder.encode(rawValue, forKey: "rawValue")
+        coder.encode(array, forKey: "array")
+    }
+    
+    static func ==(lhs: DecodableArray, rhs: DecodableArray) -> Bool {
+        return lhs.rawValue == rhs.rawValue
     }
 }

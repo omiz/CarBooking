@@ -1,15 +1,14 @@
 //
-//  VehicleCollectionViewCell.swift
+//  BookingDetailCell.swift
 //  CarBooking
 //
-//  Created by Omar Allaham on 10/18/17.
+//  Created by Omar Allaham on 10/20/17.
 //  Copyright © 2017 Omar Allaham. All rights reserved.
 //
 
 import UIKit
 
-class VehicleCollectionViewCell: UICollectionViewCell {
-    
+class BookingDetailCell: UICollectionViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var nameTextLabel: UILabel!
     @IBOutlet weak var descriptionTextLabel: UILabel!
@@ -38,8 +37,8 @@ class VehicleCollectionViewCell: UICollectionViewCell {
     }
     
     
-    func setup(_ item: Vehicle) {
-        nameTextLabel.text = item.name
-        descriptionTextLabel.text = item.hasDescription ? item.shortDescription : "No description available".localized
+    func setup(_ item: Booking) {
+        nameTextLabel.text = item.vehicle?.name
+        descriptionTextLabel.text = item.date?.formatted
     }
 }

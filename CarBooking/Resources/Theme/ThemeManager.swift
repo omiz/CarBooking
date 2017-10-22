@@ -26,7 +26,9 @@ struct ThemeManager {
         UISwitch.appearance().onTintColor = UIColor.primary.withAlphaComponent(0.3)
         UISwitch.appearance().thumbTintColor = .primary
         
-        UIButton.appearance().tintColor = .primary
+        UIButton.appearance().tintColor = .accent
+        
+        UIButton.appearance().layer.cornerRadius = 5
     }
 }
 

@@ -23,6 +23,21 @@ class VehicleDetail: Vehicle {
         try super.init(json: json)
     }
     
+    required init(coder decoder: NSCoder) {
+        vehicleDescription = decoder.decodeObject(forKey: "vehicleDescription") as? String ?? ""
+        image = decoder.decodeObject(forKey: "image")  as? String ?? ""
+        
+        super.init(coder: decoder)
+    }
+    
+    
+    override func encode(with coder: NSCoder) {
+        super.encode(with: coder)
+        
+        coder.encode(vehicleDescription, forKey: "vehicleDescription")
+        coder.encode(image, forKey: "image")
+    }
+    
     static func ==(_ lhs: VehicleDetail, _ rhs: VehicleDetail) -> Bool {
         return lhs.id == rhs.id
     }

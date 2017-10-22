@@ -10,6 +10,7 @@ import UIKit
 
 class VehicleListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var refreshController: UIRefreshControl!
@@ -59,9 +60,10 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
         request?.cancel()
         
         refreshController?.beginRefreshing()
+        noteLabel.text = ""
         
-        request = DataManager.shared.vehicles.all().reload(success: {
-            self.handleResponse($0.array)
+        request = DataManager.shared.vehicles.all().loadArray(success: {
+            self.handle(success: $0.array)
             self.stopReloadProccess()
         }, failure: { _ in
             self.alertFailure()
@@ -69,8 +71,12 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
         })
     }
     
-    func handleResponse(_ array: [Vehicle]) {
+    func handle(success array: [Vehicle]) {
+        
         dataSource = array.sorted { $0.name < $1.name }
+        
+        noteLabel.text = array.isEmpty ? "The Vehicle list will be shown here when available" : ""
+        
         collectionView.reloadData()
     }
     
@@ -79,7 +85,7 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     func alertFailure() {
-        
+        noteLabel.text = "Could not load because of an error \nPlease check your internet connection"
     }
     
     override func viewDidLayoutSubviews() {
@@ -91,6 +97,8 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
     
     
     //MARK: - collectionView
+    
+    //TODO: update vehicle cell size depending on the screen size
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {

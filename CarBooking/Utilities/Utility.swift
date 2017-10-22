@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 func typeName(_ some: Any) -> String {
     return (some is Any.Type) ? "\(some)" : "\(type(of: (some) as AnyObject))"
 }
+
+var cornerRadius: CGFloat = 5.0
