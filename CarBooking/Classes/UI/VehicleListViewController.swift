@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VehicleListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class VehicleListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -78,6 +78,8 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
         noteLabel.text = array.isEmpty ? "The Vehicle list will be shown here when available".localized : ""
         
         collectionView.reloadData()
+        
+        layoutCollectionView()
     }
     
     func stopReloadProccess() {
@@ -91,21 +93,23 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        layoutCollectionView()
+    }
+    
+    func layoutCollectionView() {
         collectionView.collectionViewLayout.invalidateLayout()
         collectionView.layoutIfNeeded()
     }
     
     
     //MARK: - collectionView
-    
-    //TODO: update vehicle cell size depending on the screen size
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let size = view.frame.size
+        let width = isPad ? view.frame.size.width / 3 : view.frame.size.width
         
-        return size
+        return CGSize(width: width, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

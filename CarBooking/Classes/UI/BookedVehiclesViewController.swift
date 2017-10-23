@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -88,6 +88,8 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
         noteLabel.text = array.isEmpty ? "The Booking list will be shown here when available".localized : ""
         
         collectionView.reloadData()
+        
+        layoutCollectionView()
     }
     
     func handle(database array: [Booking]?) {
@@ -95,6 +97,8 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
         dataSource = array?.sorted { ($0.date?.timeIntervalSince1970 ?? 0) < ($1.date?.timeIntervalSince1970 ?? 0) } ?? []
         
         collectionView.reloadData()
+        
+        layoutCollectionView()
         
         handleEmpty()
     }
@@ -116,6 +120,10 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        layoutCollectionView()
+    }
+    
+    func layoutCollectionView() {
         collectionView.collectionViewLayout.invalidateLayout()
         collectionView.layoutIfNeeded()
     }
@@ -123,14 +131,13 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
     
     //MARK: - collectionView
     
-    //TODO: update vehicle cell size depending on the screen size
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let size = view.frame.size
+        let width = isPad ? view.frame.size.width / 3 : view.frame.size.width
         
-        return size
+        return CGSize(width: width, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

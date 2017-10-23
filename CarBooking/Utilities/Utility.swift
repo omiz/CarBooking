@@ -14,3 +14,7 @@ func typeName(_ some: Any) -> String {
 }
 
 var cornerRadius: CGFloat = 5.0
+
+var interfaceIdiom: UIUserInterfaceIdiom { return UIDevice.current.userInterfaceIdiom }
+
+var isPad: Bool { return interfaceIdiom == .pad }
