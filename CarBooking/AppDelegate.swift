@@ -99,6 +99,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                                 withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
     }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        let identifier = Bundle.main.bundleIdentifier ?? ""
+        
+        switch shortcutItem.type {
+        case identifier + ".allVehicles":
+            tabBarController?.showAllVehiclesTab()
+            
+        case identifier + ".myBooking":
+            tabBarController?.showMyBookingsTab()
+            
+        case identifier + ".contacts":
+            tabBarController?.showContactsTab()
+            
+        default:
+            break
+        }
+        
+        completionHandler(true)
+    }
 
     func setupReachability() {
         

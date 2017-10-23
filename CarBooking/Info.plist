@@ -25,6 +25,39 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>tabbar_vehicle</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>All vehicles</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).allVehicles</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>tabbar_booked</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>My Bookings</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).myBooking</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>tabbar_contact</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Contacts</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).contacts</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict/>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

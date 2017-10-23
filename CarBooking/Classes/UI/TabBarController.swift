@@ -30,14 +30,16 @@ class TabBarController: UITabBarController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showAllVehiclesTab() {
+        selectedIndex = 0
     }
-    */
+    
+    func showMyBookingsTab() {
+        selectedIndex = 1
+    }
+    
+    func showContactsTab() {
+        selectedIndex = 2
+    }
 
 }

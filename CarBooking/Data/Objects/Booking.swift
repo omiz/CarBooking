@@ -162,8 +162,7 @@ class Booking: NSObject, NSCoding, BaseObject {
         return date.addingTimeInterval(sinceDate)
     }
     
-    func addNotification(at date: Date, completion: ((Error?) -> Void)? = nil) {
-        
+    func notificationContent(forDate date:Date) -> UNMutableNotificationContent {
         let content = UNMutableNotificationContent()
         
         content.categoryIdentifier = typeName(self)
@@ -174,6 +173,13 @@ class Booking: NSObject, NSCoding, BaseObject {
         content.userInfo = ["id": self.id,
                             "timeIntervalSince1970": date.timeIntervalSince1970,
                             "timeIntervalSinceDate": self.date?.timeIntervalSince(date) ?? 0]
+        
+        return content
+    }
+    
+    func addNotification(at date: Date, completion: ((Error?) -> Void)? = nil) {
+        
+        let content = notificationContent(forDate: date)
         
         let flags: Set<Calendar.Component> = [.timeZone, .second, .minute, .hour, .day, .month, .year]
         
