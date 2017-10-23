@@ -8,12 +8,33 @@
 
 import UIKit
 
-class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+enum BookingFilters: String {
+    case noFilter = "No filter"
+    case active = "Active"
+    case inactive = "Inactive"
+    case today = "Today"
+    
+    static var count: Int { return BookingFilters.today.hashValue + 1}
+    
+    static var allValues: [BookingFilters] { return [noFilter, active, inactive, today] }
+}
+
+class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var filterView: UIView!
+    @IBOutlet weak var filterPickerView: UIPickerView!
+    @IBOutlet weak var filterViewHeightConstraint: NSLayoutConstraint!
+    
     var refreshController: UIRefreshControl!
+    
+    var filtersDataSource: [BookingFilters] = BookingFilters.allValues
+    
+    var activeFilter: BookingFilters = .noFilter
+    
+    var originalDataSource: [Booking] = [] { didSet { filterDataSourceIfNeeded() } }
     
     var dataSource: [Booking] = []
     
@@ -21,8 +42,17 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
     
     var showDetailTries = 2
     
+    var rightBarButtonItems: [UIBarButtonItem] {
+        return [UIBarButtonItem(image: UIImage(named: "barButton_filter"),
+                                style: .plain,
+                                target: self,
+                                action: #selector(toggleFiltersView(_:)))]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItems = rightBarButtonItems
         
         setupTitle()
         
@@ -83,7 +113,7 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
     
     func handle(success array: [Booking]) {
         
-        dataSource = array.sorted { ($0.date?.timeIntervalSince1970 ?? 0) < ($1.date?.timeIntervalSince1970 ?? 0) }
+        originalDataSource = array.sorted { ($0.date?.timeIntervalSince1970 ?? 0) < ($1.date?.timeIntervalSince1970 ?? 0) }
         
         noteLabel.text = array.isEmpty ? "The Booking list will be shown here when available".localized : ""
         
@@ -94,7 +124,7 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
     
     func handle(database array: [Booking]?) {
         
-        dataSource = array?.sorted { ($0.date?.timeIntervalSince1970 ?? 0) < ($1.date?.timeIntervalSince1970 ?? 0) } ?? []
+        originalDataSource = array?.sorted { ($0.date?.timeIntervalSince1970 ?? 0) < ($1.date?.timeIntervalSince1970 ?? 0) } ?? []
         
         collectionView.reloadData()
         
@@ -193,6 +223,53 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
         collectionView.selectItem(at: index, animated: false, scrollPosition: .centeredVertically)
         
         performSegue(withIdentifier: "showDetail", sender: collectionView)
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return filtersDataSource.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return filtersDataSource[row].rawValue
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        activeFilter = filtersDataSource[row]
+        
+        filterDataSourceIfNeeded()
+        
+        collectionView.reloadData()
+        
+        toggleFiltersView(pickerView)
+    }
+    
+    @objc func toggleFiltersView(_ sender: Any) {
+        let show = filterViewHeightConstraint.constant == 0
+        
+        filterViewHeightConstraint.constant = show ? 200 : 0
+        
+        collectionView.isUserInteractionEnabled = !show
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func filterDataSourceIfNeeded() {
+        switch activeFilter {
+        case .noFilter:
+            dataSource = originalDataSource
+        case .active:
+            dataSource = originalDataSource.filter({ ($0.date?.timeIntervalSinceNow ?? 0) > 0 })
+        case .inactive:
+            dataSource = originalDataSource.filter({ ($0.date?.timeIntervalSinceNow ?? 0) <= 0 })
+        case .today:
+            dataSource = originalDataSource.filter({ $0.date != nil && Calendar.current.isDateInToday($0.date!) })
+        }
     }
     
     deinit {
