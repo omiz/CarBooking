@@ -73,7 +73,7 @@ class BookingDetailViewController: UIViewController, UITableViewDelegate, UITabl
         updateButton.isHidden = !isDirty
         
         deleteButton.isHidden = isDirty
-        notificationButton.isHidden = isDirty
+        notificationButton.isHidden = isDirty || (booking?.date?.timeIntervalSinceNow ?? 0) <= 0
     }
 
     func setupTable() {
@@ -223,9 +223,53 @@ class BookingDetailViewController: UIViewController, UITableViewDelegate, UITabl
     @IBAction func addNotification(_ sender: UIButton) {
         guard let booking = booking else { return }
         
+        guard let date = booking.date, date.timeIntervalSinceNow > 0 else { return }
+        
+        showNotificationDatePicker(sender)
+    }
+    
+    func showNotificationDatePicker(_ sender: UIView) {
+        let alert = UIAlertController.init(title: nil, message: "\n\n\n\n\n\n\n\n\n", preferredStyle: .actionSheet)
+        
+        let picker = addDatePicker(in: alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel".localized, style: .cancel, handler: nil))
+        
+        alert.addAction(UIAlertAction(title: "Set".localized, style: .default, handler: { _ in
+            self.addNotification(at: picker.date)
+        }))
+        
+        alert.popoverPresentationController?.sourceView = sender
+        alert.popoverPresentationController?.sourceRect = CGRect(x: sender.bounds.midX, y: sender.bounds.midY, width: 0, height: 0)
+        
+        present(alert, animated: true)
+    }
+    
+    func setup(notificationDatePicker picker: UIDatePicker) {
+        
+        picker.minimumDate = Date()
+        picker.maximumDate = booking?.date ?? Booking.defaultDate
+    }
+    
+    @discardableResult
+    func addDatePicker(in alert: UIAlertController) -> UIDatePicker {
+        
+        let picker = UIDatePicker(frame: CGRect.zero)
+        
+        setup(notificationDatePicker: picker)
+        
+        alert.view.addSubview(picker)
+        alert.view.clipsToBounds = true
+        
+        return picker
+    }
+    
+    func addNotification(at date: Date) {
+        guard let booking = booking else { return }
+        
         guard booking.isBooked else { return }
         
-        booking.addNotification(at: Date(timeIntervalSinceNow: 20)) {
+        booking.addNotification(at: date) {
             guard $0 == nil else { return }
             self.reloadNotifications()
         }
