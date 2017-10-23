@@ -44,7 +44,7 @@ class BookingDateViewController: UIViewController {
     func setupTexts() {
         label.text = "Please select the starting date".localized
         confirmbutton.setTitle("Next".localized, for: .normal)
-        dismissbutton.setTitle("Dismiss", for: .normal)
+        dismissbutton.setTitle("Dismiss".localized, for: .normal)
     }
     
     func setupColors() {

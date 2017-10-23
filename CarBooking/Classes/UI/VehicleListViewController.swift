@@ -75,7 +75,7 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
         
         dataSource = array.sorted { $0.name < $1.name }
         
-        noteLabel.text = array.isEmpty ? "The Vehicle list will be shown here when available" : ""
+        noteLabel.text = array.isEmpty ? "The Vehicle list will be shown here when available".localized : ""
         
         collectionView.reloadData()
     }
@@ -85,7 +85,7 @@ class VehicleListViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     func alertFailure() {
-        noteLabel.text = "Could not load because of an error \nPlease check your internet connection"
+        noteLabel.text = "Could not load because of an error \nPlease check your internet connection".localized
     }
     
     override func viewDidLayoutSubviews() {

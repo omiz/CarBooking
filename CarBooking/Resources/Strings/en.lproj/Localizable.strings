@@ -1,7 +1,46 @@
-/* 
-  Localizable.strings
-  CarBooking
-
-  Created by Omar Allaham on 10/18/17.
-  Copyright © 2017 Omar Allaham. All rights reserved.
-*/
+{
+	days = days;
+	day = day;
+	"Booking %@ for %@ %@ starting %@" = "Booking %@ for %@ %@ starting %@";
+	"Your booking of %@ has started" = "Your booking of %@ has started";
+	"Please select the starting date" = "Please select the starting date";
+	Next = Next;
+	Dismiss = Dismiss;
+	"For how many days" = "For how many days";
+	Back = Back;
+	Confirm = Confirm;
+	Confirmation = Confirmation;
+	"Booking success" = "Booking success";
+	"Your Booking has been saved" = "Your Booking has been saved";
+	Ok = Ok;
+	"Notify me when it starts" = "Notify me when it starts";
+	"Booking of" = "Booking of";
+	View = View;
+	"You can not change the date for old Bookings" = "You can not change the date for old Bookings";
+	"Booking date is not available" = "Booking date is not available";
+	"Starting date: %@" = "Starting date: %@";
+	"You can not change the days count for old Bookings" = "You can not change the days count for old Bookings";
+	"Booking duration is not available" = "Booking duration is not available";
+	"For: %d %@" = "For: %d %@";
+	"At the event start" = "At the event start";
+	Delete = Delete;
+	Cancel = Cancel;
+	Update = Update;
+	"Add notification" = "Add notification";
+	Notifications = Notifications;
+	Booking = Booking;
+	"Are you sure you want to delete this Booking?" = "Are you sure you want to delete this Booking?";
+	Yes = Yes;
+	No = No;
+	"No description available" = "No description available";
+	Vehicles = Vehicles;
+	"The Vehicle list will be shown here when available" = "The Vehicle list will be shown here when available";
+	"Could not load because of an error \\nPlease check your internet connection" = "Could not load because of an error \\nPlease check your internet connection";
+	"My Bookings" = "My Bookings";
+	"The Booking list will be shown here when available" = "The Booking list will be shown here when available";
+	"Your bookings will be shown here." = "Your bookings will be shown here.";
+	Vehicle = Vehicle;
+	Book = Book;
+	Alert = Alert;
+	"Internet is lost.\\nPlease check your internet connection!" = "Internet is lost.\\nPlease check your internet connection!";
+}

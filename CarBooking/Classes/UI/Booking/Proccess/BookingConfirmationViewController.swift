@@ -122,7 +122,7 @@ class BookingConfirmationViewController: UIViewController {
             self.dismiss(animated: true)
         }))
         
-        alert.addAction(UIAlertAction(title: "Notify me when it starts", style: .default, handler: { _ in
+        alert.addAction(UIAlertAction(title: "Notify me when it starts".localized, style: .default, handler: { _ in
             //TODO: handle empty date
             guard let date = booking?.date else { return }
             
