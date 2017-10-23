@@ -16,11 +16,7 @@ class Vehicle: NSObject, NSCoding, BaseObject {
     
     var id: Int
     let name: String
-    let shortDescription: String
-    
-    var hasDescription: Bool {
-        return !shortDescription.isEmpty
-    }
+    let shortDescription: String?
     
     override var description: String {
         return rawValue
@@ -42,7 +38,7 @@ class Vehicle: NSObject, NSCoding, BaseObject {
         
         id = json["id"].intValue
         name = json["name"].stringValue
-        shortDescription = json["shortDescription"].stringValue
+        shortDescription = json["shortDescription"].string
         
         rawValue = json.description
     }
@@ -51,7 +47,7 @@ class Vehicle: NSObject, NSCoding, BaseObject {
         rawValue = decoder.decodeObject(forKey: "rawValue") as? String ?? ""
         id = decoder.decodeInteger(forKey: "id")
         name = decoder.decodeObject(forKey: "name")  as? String ?? ""
-        shortDescription = decoder.decodeObject(forKey: "shortDescription")  as? String ?? ""
+        shortDescription = decoder.decodeObject(forKey: "shortDescription")  as? String
     }
     
     

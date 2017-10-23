@@ -40,6 +40,6 @@ class VehicleCollectionViewCell: UICollectionViewCell {
     
     func setup(_ item: Vehicle) {
         nameTextLabel.text = item.name
-        descriptionTextLabel.text = item.hasDescription ? item.shortDescription : "No description available".localized
+        descriptionTextLabel.text = item.shortDescription ?? "No description available".localized
     }
 }
