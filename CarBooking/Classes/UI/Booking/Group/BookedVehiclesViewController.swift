@@ -9,10 +9,23 @@
 import UIKit
 
 enum BookingFilters: String {
-    case noFilter = "No filter"
-    case active = "Active"
-    case inactive = "Inactive"
-    case today = "Today"
+    case noFilter
+    case active
+    case inactive
+    case today
+    
+    var localized: String {
+        switch self {
+        case .noFilter:
+            return "No filter".localized
+        case .active:
+            return "Active".localized
+        case .inactive:
+            return "Inactive".localized
+        case .today:
+            return "Today".localized
+        }
+    }
     
     static var count: Int { return BookingFilters.today.hashValue + 1}
     
@@ -234,7 +247,7 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return filtersDataSource[row].rawValue
+        return filtersDataSource[row].localized
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

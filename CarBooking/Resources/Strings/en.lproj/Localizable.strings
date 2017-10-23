@@ -43,4 +43,8 @@
 	Book = Book;
 	Alert = Alert;
 	"Internet is lost.\\nPlease check your internet connection!" = "Internet is lost.\\nPlease check your internet connection!";
+	"No filter" = "No filter";
+	Active = Active;
+	Inactive = Inactive;
+	Today = Today;
 }
