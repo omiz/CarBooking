@@ -125,6 +125,8 @@ class BookingConfirmationViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Notify me when it starts", style: .default, handler: { _ in
             //TODO: handle empty date
             guard let date = booking?.date else { return }
+            
+            //TODO: handle errors while adding notifications
             booking?.addNotification(at: date)
             self.dismiss(animated: true)
         }))

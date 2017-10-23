@@ -21,7 +21,7 @@ class BookingDurationViewController: UIViewController, UIPickerViewDataSource, U
     @IBOutlet weak var dismissbutton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     
-    var dataSouce: [String] = (1...7).map { $0.description }
+    var dataSouce: [String] = Booking.allowedDaysCount.map { $0.description }
     
     var vehicle: VehicleDetail?
     
@@ -49,8 +49,8 @@ class BookingDurationViewController: UIViewController, UIPickerViewDataSource, U
     func setupTexts() {
         label.text = "For how many days".localized
         confirmbutton.setTitle("Next".localized, for: .normal)
-        dismissbutton.setTitle("Dismiss", for: .normal)
-        backButton.setTitle("Back", for: .normal)
+        dismissbutton.setTitle("Dismiss".localized, for: .normal)
+        backButton.setTitle("Back".localized, for: .normal)
     }
     
     func setupColors() {

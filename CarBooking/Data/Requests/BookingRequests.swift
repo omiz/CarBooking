@@ -41,6 +41,25 @@ struct BookingRequests {
         return request
     }
     
+    func update(_ object: Booking) -> APIRequest<Booking,DataErrorObject> {
+        
+        //TODO: add authentications and post to the server
+        let request: APIRequest<Booking,DataErrorObject> = tron.request("book.json")
+        
+        request.method = .put
+        
+        request.object = object
+        
+        request.objectId = object.id
+        
+        //TODO: update booking parameters
+        request.parameters = ["id": object.id,
+                              "date": object.date?.timeIntervalSince1970 as Any,
+                              "duration": object.duration as Any]
+        
+        return request
+    }
+    
     func delete(_ object: Booking) -> APIRequest<Booking,DataErrorObject> {
         
         //TODO: add authentications and delete on the server

@@ -60,19 +60,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                                 didReceive response: UNNotificationResponse,
                                 withCompletionHandler completionHandler: @escaping () -> Void) {
         
-        guard response.notification.request.content.categoryIdentifier.starts(with: Booking.notificationId) else { return }
+        guard response.notification.request.content.categoryIdentifier.starts(with: Booking.notificationId) else { return completionHandler() }
         
         UIApplication.shared.applicationIconBadgeNumber = UIApplication.shared.applicationIconBadgeNumber - 1
         
         let userInfo = response.notification.request.content.userInfo
         
-        guard let id = userInfo["id"] as? Int else { return }
+        guard let id = userInfo["id"] as? Int else { return completionHandler() }
         
-        tabBarController?.selectedIndex = 1
-        
-        print("load booking with id:", id)
+        goToBookingDetail(with: id)
         
         completionHandler()
+    }
+    
+    func goToBookingDetail(with id: Int) {
+        let item = tabBarController?.viewControllers?.enumerated().first(where: {
+            guard let controller = $0.element as? UINavigationController else { return false }
+            
+            return controller.viewControllers.first is BookedVehiclesViewController
+        })
+        
+        (item?.element as? UINavigationController)?.popToRootViewController(animated: true)
+        
+        let index = item?.offset ?? 0
+        let controller = item?.element.childViewControllers.first as? BookedVehiclesViewController
+        
+        tabBarController?.selectedIndex = index
+        
+        let booking = controller?.dataSource.enumerated().first(where: { $0.element.id == id })
+        
+        if let booking = booking {
+            controller?.showDetail(for: booking.element.id)
+        }
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter,

@@ -17,21 +17,31 @@ class Booking: NSObject, NSCoding, BaseObject {
         return "Booking"
     }
     
+    class var defaultDate: Date {
+        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date()) ?? Date()
+        
+        let calendar = Calendar(identifier: .gregorian)
+        
+        return calendar.date(bySettingHour: 9, minute: 0, second: 0, of: tomorrow) ?? Date()
+    }
+    
+    class var allowedDaysCount: [Int] {
+        return (1...7).map({ $0 })
+    }
+    
     var notificationId: String {
-        return "Booking" + id.description
+        return Booking.notificationId + "-" + id.description + "-"
     }
     
     var id: Int = 0
     
-    var vehicle: VehicleDetail? { didSet { updateNotificationIfNeeded() } }
+    var vehicle: VehicleDetail?
     
-    var date: Date? { didSet { updateNotificationIfNeeded() } }
+    var date: Date?
     
-    var duration: Int? { didSet { updateNotificationIfNeeded() } }
+    var duration: Int?
     
-    var isBooked: Bool {
-        return date != nil
-    }
+    var isBooked: Bool { return date != nil }
     
     var localizedDescription: String {
         
@@ -110,6 +120,14 @@ class Booking: NSObject, NSCoding, BaseObject {
         }
     }
     
+    func removeAllNotifications() {
+        notification {
+            let ids = $0.map({ $0.identifier })
+            
+            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ids)
+        }
+    }
+    
     func notification(completion: @escaping (([UNNotificationRequest]) -> Void)) {
         
         UNUserNotificationCenter.current().getPendingNotificationRequests {
@@ -120,11 +138,8 @@ class Booking: NSObject, NSCoding, BaseObject {
     
     func reschedule(_ request: UNNotificationRequest) {
         
-        let since1970 = request.content.userInfo["timeIntervalSince1970"] as? Double ?? 0
-        let sinceDate = request.content.userInfo["timeIntervalSinceDate"] as? Double ?? 0
-        
-        var date = Date(timeIntervalSince1970: since1970)
-        let bookingDate = date.addingTimeInterval(sinceDate)
+        var date = scheduleDate(in: request)
+        let bookingDate = self.bookingDate(in: request)
         
         let differnce = self.date?.timeIntervalSince(bookingDate) ?? 0
         
@@ -133,7 +148,21 @@ class Booking: NSObject, NSCoding, BaseObject {
         addNotification(at: date)
     }
     
-    func addNotification(at date: Date) {
+    func scheduleDate(in request: UNNotificationRequest) -> Date {
+        let since1970 = request.content.userInfo["timeIntervalSince1970"] as? Double ?? 0
+        
+        return Date(timeIntervalSince1970: since1970)
+    }
+    
+    func bookingDate(in request: UNNotificationRequest) -> Date {
+        let sinceDate = request.content.userInfo["timeIntervalSinceDate"] as? Double ?? 0
+        
+        let date = scheduleDate(in: request)
+        
+        return date.addingTimeInterval(sinceDate)
+    }
+    
+    func addNotification(at date: Date, completion: ((Error?) -> Void)? = nil) {
         
         let content = UNMutableNotificationContent()
         
@@ -159,9 +188,7 @@ class Booking: NSObject, NSCoding, BaseObject {
         UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) {
             guard $0 && $1 == nil else { return }
             
-            UNUserNotificationCenter.current().add(request) {
-                print($0 ?? "notifcation added successfully")
-            }
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: { completion?($0) })
         }
     }
     

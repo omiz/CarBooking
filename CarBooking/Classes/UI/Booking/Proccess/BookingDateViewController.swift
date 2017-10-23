@@ -24,14 +24,6 @@ class BookingDateViewController: UIViewController {
     
     var date: Date?
     
-    var defaultDate: Date {
-        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date()) ?? Date()
-        
-        let calendar = Calendar(identifier: .gregorian)
-        
-        return calendar.date(bySettingHour: 9, minute: 0, second: 0, of: tomorrow) ?? Date()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -66,7 +58,7 @@ class BookingDateViewController: UIViewController {
     func setupDate() {
         datePicker.minimumDate = Date()
         
-        datePicker.date = defaultDate
+        datePicker.date = Booking.defaultDate
         
         date = datePicker.date
         

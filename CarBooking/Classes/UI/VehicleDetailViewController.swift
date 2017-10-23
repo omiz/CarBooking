@@ -41,7 +41,9 @@ class VehicleDetailViewController: UIViewController, UIScrollViewDelegate {
         
         updateContentBottom()
         
-        load()
+        updateViewContent()
+        
+        loadIfNeeded()
     }
     
     func prepareView() {
@@ -100,6 +102,12 @@ class VehicleDetailViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidDisappear(animated)
         
         request?.suspend()
+    }
+    
+    func loadIfNeeded() {
+        guard vehicle == nil else { return }
+        
+        load()
     }
     
     func load() {

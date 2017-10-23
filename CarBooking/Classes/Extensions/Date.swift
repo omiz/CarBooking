@@ -13,7 +13,7 @@ extension Date {
         let formatter = DateFormatter()
         
         formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
+        formatter.timeStyle = .short
         
         formatter.doesRelativeDateFormatting = true
         

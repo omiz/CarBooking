@@ -17,6 +17,9 @@
 		E02DC4461F995E2F009761F5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DC4441F995E2F009761F5 /* Date.swift */; };
 		E02DC4471F995E2F009761F5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DC4441F995E2F009761F5 /* Date.swift */; };
 		E03489801F9CB45C00D2DAE1 /* BookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E034897F1F9CB45C00D2DAE1 /* BookingTests.swift */; };
+		E03489821F9CE3FD00D2DAE1 /* BookingDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03489811F9CE3FD00D2DAE1 /* BookingDetail.storyboard */; };
+		E03489831F9CE3FD00D2DAE1 /* BookingDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03489811F9CE3FD00D2DAE1 /* BookingDetail.storyboard */; };
+		E03489841F9CE3FD00D2DAE1 /* BookingDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03489811F9CE3FD00D2DAE1 /* BookingDetail.storyboard */; };
 		E04534151F99FD7A00662B08 /* BookingDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04534141F99FD7A00662B08 /* BookingDetailCell.swift */; };
 		E04534161F99FD7A00662B08 /* BookingDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04534141F99FD7A00662B08 /* BookingDetailCell.swift */; };
 		E04534171F99FD7A00662B08 /* BookingDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04534141F99FD7A00662B08 /* BookingDetailCell.swift */; };
@@ -118,6 +121,15 @@
 		E0C447FC1F980DEB00FDF7A6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */; };
 		E0C447FD1F980DEB00FDF7A6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */; };
 		E0C447FE1F980DEB00FDF7A6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */; };
+		E0F5C75F1F9D1FCC0065CACB /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F5C75E1F9D1FCC0065CACB /* Vehicle.storyboard */; };
+		E0F5C7601F9D1FCC0065CACB /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F5C75E1F9D1FCC0065CACB /* Vehicle.storyboard */; };
+		E0F5C7611F9D1FCC0065CACB /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F5C75E1F9D1FCC0065CACB /* Vehicle.storyboard */; };
+		E0F5C7631F9D30800065CACB /* BookingDayPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C7621F9D30800065CACB /* BookingDayPickerCell.swift */; };
+		E0F5C7641F9D30800065CACB /* BookingDayPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C7621F9D30800065CACB /* BookingDayPickerCell.swift */; };
+		E0F5C7651F9D30800065CACB /* BookingDayPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C7621F9D30800065CACB /* BookingDayPickerCell.swift */; };
+		E0F5C76F1F9D44900065CACB /* BookingNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C76E1F9D44900065CACB /* BookingNotificationCell.swift */; };
+		E0F5C7701F9D44900065CACB /* BookingNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C76E1F9D44900065CACB /* BookingNotificationCell.swift */; };
+		E0F5C7711F9D44900065CACB /* BookingNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C76E1F9D44900065CACB /* BookingNotificationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +161,7 @@
 		E015C3731F9C1B8A00A1B768 /* BaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
 		E02DC4441F995E2F009761F5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		E034897F1F9CB45C00D2DAE1 /* BookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTests.swift; sourceTree = "<group>"; };
+		E03489811F9CE3FD00D2DAE1 /* BookingDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookingDetail.storyboard; sourceTree = "<group>"; };
 		E04534141F99FD7A00662B08 /* BookingDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailCell.swift; sourceTree = "<group>"; };
 		E06CFA421F97C0CD00344812 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06CFA451F97C0CD00344812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +207,9 @@
 		E0C447F31F98063700FDF7A6 /* VehicleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetail.swift; sourceTree = "<group>"; };
 		E0C447F71F9807BC00FDF7A6 /* VehicleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewController.swift; sourceTree = "<group>"; };
 		E0C447FB1F980DEB00FDF7A6 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		E0F5C75E1F9D1FCC0065CACB /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
+		E0F5C7621F9D30800065CACB /* BookingDayPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDayPickerCell.swift; sourceTree = "<group>"; };
+		E0F5C76E1F9D44900065CACB /* BookingNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingNotificationCell.swift; sourceTree = "<group>"; };
 		F309E78F87AD5BA4BDD69852 /* Pods-CarBookingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBookingUITests/Pods-CarBookingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,7 +297,6 @@
 				E06CFA4B1F97C0CD00344812 /* Main.storyboard */,
 				E06CFA501F97C0CD00344812 /* LaunchScreen.storyboard */,
 				E06CFA531F97C0CD00344812 /* Info.plist */,
-				E0848ED91F99411400FB6FED /* Booking.storyboard */,
 			);
 			path = CarBooking;
 			sourceTree = "<group>";
@@ -330,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				E0848EC81F9924FA00FB6FED /* BookingDetailViewController.swift */,
+				E03489811F9CE3FD00D2DAE1 /* BookingDetail.storyboard */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -340,6 +356,8 @@
 				E0848ECD1F9931FD00FB6FED /* BookingTitleCell.swift */,
 				E0848ED11F99324100FB6FED /* BookingTimePickerCell.swift */,
 				E04534141F99FD7A00662B08 /* BookingDetailCell.swift */,
+				E0F5C7621F9D30800065CACB /* BookingDayPickerCell.swift */,
+				E0F5C76E1F9D44900065CACB /* BookingNotificationCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -350,6 +368,7 @@
 				E0848EDE1F9943C500FB6FED /* BookingDateViewController.swift */,
 				E0848EE21F9943E400FB6FED /* BookingDurationViewController.swift */,
 				E0848EE61F99442700FB6FED /* BookingConfirmationViewController.swift */,
+				E0848ED91F99411400FB6FED /* Booking.storyboard */,
 			);
 			path = Proccess;
 			sourceTree = "<group>";
@@ -468,6 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				E0C447E01F97E5BD00FDF7A6 /* Cell */,
+				E0F5C75E1F9D1FCC0065CACB /* Vehicle.storyboard */,
 			);
 			path = Vehicle;
 			sourceTree = "<group>";
@@ -605,8 +625,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06CFA521F97C0CD00344812 /* LaunchScreen.storyboard in Resources */,
+				E03489821F9CE3FD00D2DAE1 /* BookingDetail.storyboard in Resources */,
 				E0848EDA1F99411400FB6FED /* Booking.storyboard in Resources */,
 				E0C447EE1F97F43400FDF7A6 /* Localizable.strings in Resources */,
+				E0F5C75F1F9D1FCC0065CACB /* Vehicle.storyboard in Resources */,
 				E06CFA4F1F97C0CD00344812 /* Assets.xcassets in Resources */,
 				E06CFA4D1F97C0CD00344812 /* Main.storyboard in Resources */,
 			);
@@ -617,6 +639,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0848EDB1F99411400FB6FED /* Booking.storyboard in Resources */,
+				E0F5C7601F9D1FCC0065CACB /* Vehicle.storyboard in Resources */,
+				E03489831F9CE3FD00D2DAE1 /* BookingDetail.storyboard in Resources */,
 				E0C447EF1F97F43400FDF7A6 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +650,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0848EDC1F99411400FB6FED /* Booking.storyboard in Resources */,
+				E0F5C7611F9D1FCC0065CACB /* Vehicle.storyboard in Resources */,
+				E03489841F9CE3FD00D2DAE1 /* BookingDetail.storyboard in Resources */,
 				E0C447F01F97F43400FDF7A6 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -804,6 +830,7 @@
 				E0848ED61F99374100FB6FED /* UITableView.swift in Sources */,
 				E06CFA481F97C0CD00344812 /* VehicleListViewController.swift in Sources */,
 				E0848EE31F9943E400FB6FED /* BookingDurationViewController.swift in Sources */,
+				E0F5C76F1F9D44900065CACB /* BookingNotificationCell.swift in Sources */,
 				E0848ECE1F9931FD00FB6FED /* BookingTitleCell.swift in Sources */,
 				E0848EDF1F9943C500FB6FED /* BookingDateViewController.swift in Sources */,
 				E0C447D41F97DAE700FDF7A6 /* Booking.swift in Sources */,
@@ -818,6 +845,7 @@
 				E0B23C441F97D66400ECE992 /* UIViewController.swift in Sources */,
 				E0848EC91F9924FA00FB6FED /* BookingDetailViewController.swift in Sources */,
 				E0B23C351F97D44900ECE992 /* VehicleRequests.swift in Sources */,
+				E0F5C7631F9D30800065CACB /* BookingDayPickerCell.swift in Sources */,
 				E015C3741F9C1B8A00A1B768 /* BaseObject.swift in Sources */,
 				E0848EE71F99442700FB6FED /* BookingConfirmationViewController.swift in Sources */,
 				E0C447E21F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */,
@@ -840,6 +868,7 @@
 				E02DC4461F995E2F009761F5 /* Date.swift in Sources */,
 				E0B23C1E1F97C6AD00ECE992 /* AppColors.swift in Sources */,
 				E0C447EC1F97E6A000FDF7A6 /* Utility.swift in Sources */,
+				E0F5C7701F9D44900065CACB /* BookingNotificationCell.swift in Sources */,
 				E0B23C2D1F97D1D400ECE992 /* DataManager.swift in Sources */,
 				E0848EEC1F99530200FB6FED /* UIView.swift in Sources */,
 				E0C447E31F97E5D900FDF7A6 /* VehicleCollectionViewCell.swift in Sources */,
@@ -852,6 +881,7 @@
 				E0848ECF1F9931FD00FB6FED /* BookingTitleCell.swift in Sources */,
 				E0C447F51F98063700FDF7A6 /* VehicleDetail.swift in Sources */,
 				E0848EE01F9943C500FB6FED /* BookingDateViewController.swift in Sources */,
+				E0F5C7641F9D30800065CACB /* BookingDayPickerCell.swift in Sources */,
 				E0848ED71F99374100FB6FED /* UITableView.swift in Sources */,
 				E0848ED31F99324100FB6FED /* BookingTimePickerCell.swift in Sources */,
 				E0B23C321F97D2FE00ECE992 /* Request.swift in Sources */,
@@ -886,6 +916,7 @@
 				E0B23C461F97D66400ECE992 /* UIViewController.swift in Sources */,
 				E0848EE91F99442700FB6FED /* BookingConfirmationViewController.swift in Sources */,
 				E06CFA681F97C0CD00344812 /* CarBookingUITests.swift in Sources */,
+				E0F5C7651F9D30800065CACB /* BookingDayPickerCell.swift in Sources */,
 				E0C447D61F97DAE700FDF7A6 /* Booking.swift in Sources */,
 				E0B23C1A1F97C63500ECE992 /* LocalizableStrings.swift in Sources */,
 				E0C447D21F97DA5500FDF7A6 /* DataError.swift in Sources */,
@@ -904,6 +935,7 @@
 				E0848EE51F9943E400FB6FED /* BookingDurationViewController.swift in Sources */,
 				E0B23C371F97D44900ECE992 /* VehicleRequests.swift in Sources */,
 				E0B23C251F97C84900ECE992 /* ThemeManager.swift in Sources */,
+				E0F5C7711F9D44900065CACB /* BookingNotificationCell.swift in Sources */,
 				E0C447FA1F9807BC00FDF7A6 /* VehicleDetailViewController.swift in Sources */,
 				E015C3761F9C1B8A00A1B768 /* BaseObject.swift in Sources */,
 				E0C447E81F97E60F00FDF7A6 /* UICollectionView.swift in Sources */,

@@ -19,6 +19,8 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
     
     var request: Request?
     
+    var showDetailTries = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,8 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
         super.viewDidAppear(animated)
         
         loadIfNeeded()
+        
+        showDetailTries = 2
     }
     
     func loadIfNeeded() {
@@ -160,11 +164,28 @@ class BookedVehiclesViewController: UIViewController, UICollectionViewDelegate, 
     
     func setupDetailIndexIfNeeded(in segue: UIStoryboardSegue) {
         
-        guard let controller = segue.destination as? VehicleDetailViewController else { return }
+        guard let controller = segue.destination as? BookingDetailViewController else { return }
         
         guard let index = collectionView.indexPathsForSelectedItems?.first?.row else { return }
         
-        controller.vehicleId = dataSource[index].id
+        controller.booking = dataSource[index]
+    }
+    
+    @objc func showDetail(for id: Int) {
+        
+        showDetailTries -= 1
+        
+        guard showDetailTries >= 0 else { return }
+        
+        guard let item = dataSource.enumerated().first(where: { $0.element.id == id }) else {
+            return perform(#selector(showDetail(for:)), with: id, afterDelay: 0.5)
+        }
+        
+        let index = IndexPath(row: item.offset, section: 0)
+        
+        collectionView.selectItem(at: index, animated: false, scrollPosition: .centeredVertically)
+        
+        performSegue(withIdentifier: "showDetail", sender: collectionView)
     }
     
     deinit {
